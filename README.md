@@ -10,3 +10,5 @@ Likewise, running "./sim_cache 32 2048 2 0 8192 4 gcc_trace.txt" creates a memor
 Both the L1 and/or L2 caches utilize the Least-Recently-Used Replacement policy (LRU) and the Write-Back-Write-Allocate write policy (WBWA). 
 
 Simulator is driven with traces that contain CPU requests, either write ('w') or read ('r') requests, with an associated 32-bit requested memory block.
+
+Each Simulation ends with results displayed pertaining to L1 and/or L1+L2's operation. For example, results include: writes, reads, read misses, L1+VC miss rate, L1 and/or L2 writes, just to name a few. These results are critical in determining aspects of how well a certain cache memory hierarchy design operates for a given trace file. These results allow me to study how effective certain designs are by calculating Average Access Time (AAT), and Compulsory/Capacity/Conflict miss rates. 
